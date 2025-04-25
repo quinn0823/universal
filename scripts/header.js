@@ -1,4 +1,6 @@
-/* Copyright (C) 2025 Jonathan Chiu
+/* Universal The universal images, styles and scripts for my web projects.
+
+Copyright (C) 2025 Jonathan Chiu
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -14,11 +16,5 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <https://www.gnu.org/licenses/>. */
 
 (function() {
-    const TITLE = document.title.match(/.*(?= \| Jonathan-Web)/)[0];
-
-    console.log('Title: ' + TITLE);
-
-    const header = '<h1>' + TITLE + '</h1><hr>';
-
-    document.getElementById('universal-header').innerHTML = header;
+    
 })();
