@@ -16,5 +16,17 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <https://www.gnu.org/licenses/>. */
 
 (function() {
-    
+    let title = document.title.split(' | ')[0];
+
+    let titleElement = document.getElementById('universal-title');
+    if (titleElement && titleElement.innerHTML) {
+        title = titleElement.innerHTML;
+    }
+
+    console.log(title);
+
+    const headerHtml = `<h1 id="universal-title">${title}</h1><hr />`;
+
+    const headerElement = document.getElementById('universal-header');
+    headerElement.innerHTML = headerHtml;
 })();
