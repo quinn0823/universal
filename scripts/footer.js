@@ -27,6 +27,13 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>. */
     const LICENSE_MAP = {
         'GPL-3.0': 'GNU General Public License v3.0'
     };
+    const LINK_MAP = {
+        'Repo': githubRepoUrl,
+        'Jonathan-Web': `https://${domain}`,
+        'GitHub': `https://github.com/${githubUserName}`,
+        '𝕏': 'https://x.com/jonathanchiu',
+        'Weibo': 'https://weibo.com/quinn0823'
+    }
 
     const metaContent = {
         'author': 'Jonathan Chiu',
@@ -56,18 +63,26 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>. */
     if (metaContent['license']) {
         const copyrightHtml = `Copyright © ${metaContent['year']} ${metaContent['author']}`;
         const license = LICENSE_MAP[metaContent['license']];
-        const licenseHtml = `Licensed under the <a href="${githubRepoUrl}/LICENSE" target="_blank">${license}</a>.`
+        const licenseHtml = `Licensed under the <a href="${githubRepoUrl}/blob/main/LICENSE" target="_blank">${license}</a>.`
         footerHtmlArray.push(copyrightHtml, licenseHtml);
     } else {
         const copyrightHtml = `Copyright © ${metaContent['year']} ${metaContent['author']} All rights reserved.`;
         footerHtmlArray.push(copyrightHtml);
     }
 
+    // Links
+    const links = Object.keys(LINK_MAP).map(key => {
+        const link = LINK_MAP[key];
+        return `<a href="${link}" target="_blank">${key}</a>`;
+    });
+    const linksHtml = links.join(' | ');
+    footerHtmlArray.push(linksHtml);
+
+    console.log(footerHtmlArray);
+
     footerHtmlArray = footerHtmlArray.map(item => `<p>${item}</p>`);
     const footerHtml = `<hr />${footerHtmlArray.join('')}`;
 
-    console.log(footerHtmlArray, footerHtml);
-
-    const footer = document.getElementById('universal-footer');
-    footer.innerHTML = footerHtml;
+    const footerElement = document.getElementById('universal-footer');
+    footerElement.innerHTML = footerHtml;
 })();
