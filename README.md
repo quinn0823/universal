@@ -24,10 +24,10 @@ The universal images, styles and scripts for my web projects.
 - [en-US](https://quinn0823.github.io/universal/template/en-us/)
 - [zh-CN](https://quinn0823.github.io/universal/template/zh-cn/)
 
-## Projects using Universal
+## Projects Powered by Universal
 
-- [universal](): Universal
 - [formula-writer](https://github.com/quinn0823/formula-writer): 公式默写器 | Formula Writer (index_new.html)
+- [universal](): Universal
 
 ## Screenshot
 
