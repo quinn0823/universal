@@ -18,10 +18,12 @@ The universal images, styles and scripts for my web projects.
 | `https://quinn0823.github.io/universal/styles/main.css` | Universal styles. |
 
 ## Template
+
 https://quinn0823.github.io/universal/template/
 
 ## Screenshot
-![Screenshot](https://github.com/user-attachments/assets/c6bdda81-5005-44a5-bcdd-3bf0f0c91736)
+
+![Screenshot](https://github.com/user-attachments/assets/8129510c-9602-4fc3-9444-752feca083aa)
 
 ---
 
