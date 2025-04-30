@@ -23,7 +23,7 @@ https://quinn0823.github.io/universal/template/
 
 ## Screenshot
 
-![Screenshot](https://github.com/user-attachments/assets/8129510c-9602-4fc3-9444-752feca083aa)
+![Template](https://github.com/user-attachments/assets/2bf95411-5e29-481d-bf79-7ffe09c0e01f)
 
 ---
 
