@@ -4,6 +4,8 @@ The universal images, styles and scripts for my web projects.
 
 ## Features
 
+### Available
+
 | URL | Feature |
 | --- | --- |
 | `https://quinn0823.github.io/universal/images/logos/*.png` | Universal logos. |
@@ -11,7 +13,7 @@ The universal images, styles and scripts for my web projects.
 | `https://quinn0823.github.io/universal/scripts/footer.js` | Footer based on the `<meta>` element: updated date, copyright (year and author) and license notice, and links. |
 | `https://quinn0823.github.io/universal/scripts/clipboard.min.js` | clipboard.js |
 
-## Not Available
+### Not Available
 
 | URL | Feature |
 | --- | --- |
