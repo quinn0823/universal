@@ -1,6 +1,6 @@
 /* 模板 网页项目的模板。
 
-Copyright (C) 2025 Jonathan Chiu
+Copyright (c) 2025 Jonathan Chiu
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by

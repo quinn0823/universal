@@ -35,8 +35,8 @@ The universal images, styles and scripts for my web projects.
 
 ---
 
-Updated Date: April 30, 2025
+Updated Date: May 7, 2025
+
+The MIT License (MIT)
 
 Copyright © 2025 Jonathan Chiu
-
-Licensed under the [GNU General Public License v3.0](LICENSE).
