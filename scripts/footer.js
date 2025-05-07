@@ -24,8 +24,6 @@ function getLocalization(key) {
             'universal.footer.updated_date.replace.pattern': null,
             'universal.footer.updated_date.replace.replacement': null,
             'universal.footer.copyright.notice': 'All rights reserved.',
-            'universal.footer.license.front': 'Licensed under the ',
-            'universal.footer.license.back': '.',
             'universal.footer.links.repo': 'Repository',
             'universal.footer.links.jon_web': 'Jonathan\'s Bytecraft',
             'universal.footer.links.twitter': '\ud835\udd4f',
@@ -41,8 +39,6 @@ function getLocalization(key) {
             'universal.footer.updated_date.replace.pattern': /(\d{4})\/(\d{2})\/(\d{2})/,
             'universal.footer.updated_date.replace.replacement': '$1 年 $2 月 $3 日',
             'universal.footer.copyright.notice': '保留所有权利。',
-            'universal.footer.license.front': '根据 ',
-            'universal.footer.license.back': ' 授权。',
             'universal.footer.links.repo': '存储库',
             'universal.footer.links.jon_web': '煊名的字节世界',
             'universal.footer.links.twitter': '\ud835\udd4f (推特)',
@@ -69,7 +65,8 @@ function getLocalization(key) {
     console.log(baseUri, domain, githubUserName, githubRepoName, githubRepoUrl);
 
     const LICENSE_MAP = {
-        'GPL-3.0': 'GNU General Public License v3.0'
+        'GPL-3.0': 'The GNU General Public License v3.0 (GPL-3.0)',
+        'MIT': 'The MIT License (MIT)'
     };
     const LINK_MAP = {
         'repo': {
@@ -114,12 +111,13 @@ function getLocalization(key) {
         footerHtmlArray.push(updatedDateHtml);
     }
 
-    // Copyright & License
-    if (metaContent['license']) {
+    // License & Copyright
+    const licenseName = metaContent['license'];
+    const licenseNameFull = LICENSE_MAP[licenseName];
+    if (licenseName && licenseNameFull) {
         const copyrightHtml = `Copyright © ${metaContent['copyright-year']} ${metaContent['author']}`;
-        const license = LICENSE_MAP[metaContent['license']];
-        const licenseHtml = `${getLocalization('universal.footer.license.front')}<a href="${githubRepoUrl}/blob/main/LICENSE" target="_blank">${license}</a>${getLocalization('universal.footer.license.back')}`;
-        footerHtmlArray.push(copyrightHtml, licenseHtml);
+        const licenseHtml = `<p>${licenseNameFull}</p>`;
+        footerHtmlArray.push(licenseHtml, copyrightHtml);
     } else {
         const copyrightHtml = `Copyright © ${metaContent['copyright-year']} ${metaContent['author']} ${getLocalization('universal.footer.copyright.notice')}`;
         footerHtmlArray.push(copyrightHtml);
