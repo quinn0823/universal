@@ -29,10 +29,6 @@ The universal images, styles and scripts for my web projects.
 - [formula-writer](https://github.com/quinn0823/formula-writer): 公式默写器 | Formula Writer (index_new.html)
 - [universal](): Universal
 
-## Screenshot
-
-![Universal 1.0](https://github.com/user-attachments/assets/2bf95411-5e29-481d-bf79-7ffe09c0e01f)
-
 ---
 
 Updated Date: May 7, 2025
