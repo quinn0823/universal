@@ -1,7 +1,7 @@
 /* Universal
 The MIT License (MIT)
 Copyright (c) 2025 Jonathan Chiu */
-    
+
 let lang = document.documentElement.lang;
 // lang = 'zh-CN';
 if (!lang) {
@@ -55,7 +55,7 @@ function getLocalization(key) {
     }
 }
 
-(function() {
+(function () {
     let baseUri = 'https://quinn0823.github.io/universal/'
     baseUri = document.baseURI;
     const domain = baseUri.split('/')[2];
@@ -96,7 +96,7 @@ function getLocalization(key) {
         'license': null,
         'copyright-year': new Date().getFullYear().toString(),
         'updated-date': null,
-    };   
+    };
     Object.keys(metaContent).forEach(key => {
         metaContent[key] = document.querySelector(`meta[name="${key}"]`)?.content || metaContent[key];
     });
