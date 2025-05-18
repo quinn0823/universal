@@ -58,9 +58,9 @@ universal
 #### clipboard.js
 
 ``` html
-<body>
+<head>
     <script src="https://quinn0823.github.io/universal/packages/clipboard/dist/clipboard.min.js" type="text/javascript"></script>
-</body>
+</head>
 ```
 
 #### Font Awesome
