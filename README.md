@@ -26,12 +26,12 @@ The universal images, styles and scripts for my web projects.
 
 ## Projects Powered by Universal
 
-- [formula-writer](https://github.com/quinn0823/formula-writer): 公式默写器 | Formula Writer (index_new.html)
+- [formula-writer](https://github.com/quinn0823/formula-writer): 公式默写器 | Formula Writer ([index_new.html](https://quinn0823.github.io/formula-writer/index_new.html))
 - [universal](): Universal
 
 ---
 
-Updated Date: May 7, 2025
+Updated Date: May 18, 2025
 
 The MIT License (MIT)
 
