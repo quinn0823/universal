@@ -18,7 +18,7 @@ universal
 ``` html
 <head>
     <link rel="icon" href="https://quinn0823.github.io/universal/images/logos/logo-transparent-fill.png" type="image/png" />
-	<link rel="apple-touch-icon" href="https://quinn0823.github.io/universal/images/logos/logo-white-fit.png" type="image/png" />
+    <link rel="apple-touch-icon" href="https://quinn0823.github.io/universal/images/logos/logo-white-fit.png" type="image/png" />
 </head>
 ```
 
@@ -29,19 +29,19 @@ universal
     <title>Template | Jonathan's Bytecraft</title>
 
     <meta name="author" content="Jonathan Chiu" />
-	<meta name="license" content="MIT" />
-	<meta name="copyright-year" content="2025" />
-	<meta name="updated-date" content="2025-04-01" />
+    <meta name="license" content="MIT" />
+    <meta name="copyright-year" content="2025" />
+    <meta name="updated-date" content="2025-04-01" />
 </head>
 <body>
-	<header id="universal-header">
-		<h1 id="universal-title"></h1>
-	</header>
+    <header id="universal-header">
+        <h1 id="universal-title"></h1>
+    </header>
 
-	<footer id="universal-footer"></footer>
+    <footer id="universal-footer"></footer>
 
-	<script src="https://quinn0823.github.io/universal/scripts/header.js" type="text/javascript"></script>
-	<script src="https://quinn0823.github.io/universal/scripts/footer.js" type="text/javascript"></script>
+    <script src="https://quinn0823.github.io/universal/scripts/header.js" type="text/javascript"></script>
+    <script src="https://quinn0823.github.io/universal/scripts/footer.js" type="text/javascript"></script>
 </body>
 ```
 
