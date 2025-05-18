@@ -11,7 +11,8 @@ The universal images, styles and scripts for my web projects.
 | `https://quinn0823.github.io/universal/images/logos/*.png` | Universal logos. |
 | `https://quinn0823.github.io/universal/scripts/header.js` | Automatic title, allowing page customization. |
 | `https://quinn0823.github.io/universal/scripts/footer.js` | Footer based on the `<meta>` element: updated date, copyright (year and author) and license notice, and links. |
-| `https://quinn0823.github.io/universal/scripts/clipboard.min.js` | clipboard.js |
+| `https://quinn0823.github.io/universal/packages/clipboard/` | clipboard.js |
+| `https://quinn0823.github.io/universal/packages/fontawesome/` | Font Awesome |
 
 ### Not Available
 
