@@ -2,23 +2,88 @@
 
 The universal images, styles and scripts for my web projects.
 
-## Features
+## Usage
 
-### Available
+### Logo
 
-| URL | Feature |
-| --- | --- |
-| `https://quinn0823.github.io/universal/images/logos/*.png` | Universal logos. |
-| `https://quinn0823.github.io/universal/scripts/header.js` | Automatic title, allowing page customization. |
-| `https://quinn0823.github.io/universal/scripts/footer.js` | Footer based on the `<meta>` element: updated date, copyright (year and author) and license notice, and links. |
-| `https://quinn0823.github.io/universal/packages/clipboard/` | clipboard.js |
-| `https://quinn0823.github.io/universal/packages/fontawesome/` | Font Awesome |
+```
+universal
+└── images
+    └── logos
+        ├── logo-transparent-fill.png
+        ├── logo-transparent-fit.png
+        └── logo-white-fit.png
+```
 
-### Not Available
+``` html
+<head>
+    <link rel="icon" href="https://quinn0823.github.io/universal/images/logos/logo-transparent-fill.png" type="image/png" />
+	<link rel="apple-touch-icon" href="https://quinn0823.github.io/universal/images/logos/logo-white-fit.png" type="image/png" />
+</head>
+```
 
-| URL | Feature |
-| --- | --- |
-| `https://quinn0823.github.io/universal/styles/main.css` | Universal styles. |
+### Header and Footer
+
+``` html
+<head>
+    <title>Template | Jonathan's Bytecraft</title>
+
+    <meta name="author" content="Jonathan Chiu" />
+	<meta name="license" content="MIT" />
+	<meta name="copyright-year" content="2025" />
+	<meta name="updated-date" content="2025-04-01" />
+</head>
+<body>
+	<header id="universal-header">
+		<h1 id="universal-title"></h1>
+	</header>
+
+	<footer id="universal-footer"></footer>
+
+	<script src="https://quinn0823.github.io/universal/scripts/header.js" type="text/javascript"></script>
+	<script src="https://quinn0823.github.io/universal/scripts/footer.js" type="text/javascript"></script>
+</body>
+```
+
+### Styles (Not Available)
+
+``` html
+<head>
+    <link rel="stylesheet" href="https://quinn0823.github.io/universal/styles/main.css" type="text/css" />
+</head>
+```
+
+### Packages
+
+#### clipboard.js
+
+``` html
+<body>
+    <script src="https://quinn0823.github.io/universal/packages/clipboard/dist/clipboard.min.js" type="text/javascript"></script>
+</body>
+```
+
+#### Font Awesome
+
+##### SVG + JS
+
+``` html
+<head>
+    <script src="https://quinn0823.github.io/universal/packages/fontawesome/js/solid.min.js" type="text/javascript"></script>
+    <script src="https://quinn0823.github.io/universal/packages/fontawesome/js/brands.min.js" type="text/javascript"></script>
+    <script src="https://quinn0823.github.io/universal/packages/fontawesome/js/fontawesome.min.js" type="text/javascript"></script>
+</head>
+```
+
+##### Web Fonts + CSS
+
+``` html
+<head>
+    <link rel="stylesheet" href="https://quinn0823.github.io/universal/packages/fontawesome/css/solid.min.css" type="text/css" />
+    <link rel="stylesheet" href="https://quinn0823.github.io/universal/packages/fontawesome/css/brands.min.css" type="text/css" />
+    <link rel="stylesheet" href="https://quinn0823.github.io/universal/packages/fontawesome/css/fontawesome.min.css" type="text/css" />
+</head>
+```
 
 ## Template
 
