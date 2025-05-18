@@ -9,7 +9,7 @@ if (!lang) {
     document.documentElement.lang = 'en-US';
     lang = 'en-US';
 } else {
-    console.log(lang);
+    // console.log(lang);
 }
 
 function getLocalization(key) {
@@ -62,7 +62,7 @@ function getLocalization(key) {
     const githubUserName = domain.split('.')[0];
     const githubRepoName = baseUri.split('/')[3];
     const githubRepoUrl = `https://github.com/${githubUserName}/${githubRepoName}`;
-    console.log(baseUri, domain, githubUserName, githubRepoName, githubRepoUrl);
+    // console.log(baseUri, domain, githubUserName, githubRepoName, githubRepoUrl);
 
     const LICENSE_MAP = {
         'GPL-3.0': 'The GNU General Public License v3.0 (GPL-3.0)',
@@ -70,22 +70,27 @@ function getLocalization(key) {
     };
     const LINK_MAP = {
         'repo': {
+            'enable': true,
             'text': getLocalization('universal.footer.links.repo'),
             'url': githubRepoUrl
         },
         'jon-web': {
+            'enable': false,
             'text': getLocalization('universal.footer.links.jon_web'),
             'url': `https://${domain}`
         },
         'github': {
+            'enable': true,
             'text': 'GitHub',
             'url': `https://github.com/${githubUserName}`
         },
         'x': {
+            'enable': false,
             'text': getLocalization('universal.footer.links.twitter'),
             'url': 'https://x.com/jonathanchiu'
         },
         'weibo': {
+            'enable': false,
             'text': getLocalization('universal.footer.links.weibo'),
             'url': 'https://weibo.com/quinn0823'
         }
@@ -100,7 +105,7 @@ function getLocalization(key) {
     Object.keys(metaContent).forEach(key => {
         metaContent[key] = document.querySelector(`meta[name="${key}"]`)?.content || metaContent[key];
     });
-    console.log(metaContent);
+    // console.log(metaContent);
 
     let footerHtmlArray = [];
 
@@ -124,15 +129,27 @@ function getLocalization(key) {
     }
 
     // Links
-    const links = Object.keys(LINK_MAP).map(key => {
-        const text = LINK_MAP[key]['text'];
-        const url = LINK_MAP[key]['url'];
-        return `<a href="${url}" target="_blank">${text}</a>`;
-    });
+    // const links = Object.keys(LINK_MAP).map(key => {
+    //     if (LINK_MAP[key]['enable']) {
+    //         const text = LINK_MAP[key]['text'];
+    //         const url = LINK_MAP[key]['url'];
+    //         return `<a href="${url}" target="_blank">${text}</a>`;
+    //     } else {
+    //         return null;
+    //     }
+    // });
+    const links = [];
+    for (const key in LINK_MAP) {
+        if (LINK_MAP[key]['enable']) {
+            const text = LINK_MAP[key]['text'];
+            const url = LINK_MAP[key]['url'];
+            links.push(`<a href="${url}" target="_blank">${text}</a>`);
+        }
+    }
     const linksHtml = links.join(' | ');
     footerHtmlArray.push(linksHtml);
 
-    console.log(footerHtmlArray);
+    // console.log(footerHtmlArray);
 
     footerHtmlArray = footerHtmlArray.map(item => `<p>${item}</p>`);
     const footerHtml = `<hr />${footerHtmlArray.join('')}`;
