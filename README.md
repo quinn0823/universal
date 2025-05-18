@@ -87,8 +87,8 @@ universal
 
 ## Template
 
-- [en-US](https://quinn0823.github.io/universal/template/en-us/)
-- [zh-CN](https://quinn0823.github.io/universal/template/zh-cn/)
+- en-US: [source](./template/en-us/index.html), [preview](https://quinn0823.github.io/universal/template/en-us/)
+- zh-CN: [source](./template/zh-cn/index.html), [preview](https://quinn0823.github.io/universal/template/zh-cn/)
 
 ## Projects Powered by Universal
 
