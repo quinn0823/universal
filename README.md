@@ -92,12 +92,15 @@ universal
 
 ## Projects Powered by Universal
 
-- [formula-writer](https://github.com/quinn0823/formula-writer): 公式默写器 | Formula Writer ([index_new.html](https://quinn0823.github.io/formula-writer/index_new.html))
-- [universal](): Universal
+- [formula-writer](https://github.com/quinn0823/formula-writer): 公式默写器用于默写并检查物理学运动学公式。
+- [universal](): The universal images, styles and scripts for my web projects.
+- [web-dock](https://github.com/quinn0823/web-dock): The Web Dock is a convenient place to access pages of my personal website—just like the Dock on the Mac desktop.
 
 ---
 
 Updated Date: May 18, 2025
+
+Published Date: May 28, 2025
 
 The MIT License (MIT)
 
