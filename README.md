@@ -120,9 +120,7 @@ universal
 
 ---
 
-Updated Date: May 18, 2025
-
-Published Date: May 28, 2025
+Updated Date: June 19, 2025
 
 The MIT License (MIT)
 
