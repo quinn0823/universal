@@ -33,6 +33,7 @@ universal
     <meta name="copyright-year" content="2025" />
     <meta name="updated-date" content="2025-04-01" />
 </head>
+
 <body>
     <header id="universal-header">
         <h1 id="universal-title"></h1>
@@ -45,7 +46,27 @@ universal
 </body>
 ```
 
-### Styles (Not Available)
+#### The MIT License (MIT)
+
+``` html
+<head>
+    <meta name="author" content="Jonathan Chiu" />
+    <meta name="license" content="MIT" />
+    <meta name="copyright-year" content="2025" />
+</head>
+```
+
+#### The GNU General Public License v3.0 (GPL-3.0)
+
+``` html
+<head>
+    <meta name="author" content="Jonathan Chiu" />
+    <meta name="license" content="GPL-3.0" />
+    <meta name="copyright-year" content="2020-2025" />
+</head>
+```
+
+### Styles
 
 ``` html
 <head>
@@ -95,6 +116,7 @@ universal
 - [formula-writer](https://github.com/quinn0823/formula-writer): 公式默写器用于默写并检查物理学运动学公式。
 - [universal](): The universal images, styles and scripts for my web projects.
 - [web-dock](https://github.com/quinn0823/web-dock): The Web Dock is a convenient place to access pages of my personal website—just like the Dock on the Mac desktop.
+- *[yi-ology](https://github.com/quinn0823/yi-ology)* (private): 易学 (Yi-Ology)
 
 ---
 
