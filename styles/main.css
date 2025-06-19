@@ -114,7 +114,7 @@ p {
 a {
     text-decoration: underline;
     color: var(--primary-light);
-    transition: color 0.1s;
+    transition: color .25s;
 }
 
 a:hover {
@@ -157,7 +157,7 @@ summary {
     list-style-position: outside;
     cursor: pointer;
     color: var(--primary-light);
-    transition: color 1s;
+    transition: color .25s;
 }
 
 summary:hover {
