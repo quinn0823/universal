@@ -1,3 +1,170 @@
 /* Universal
 The MIT License (MIT)
 Copyright (c) 2025 Jonathan Chiu */
+
+@import url("./color.css");
+
+:root {
+    --primary-light: var(--brown-light);
+    --primary-dark: var(--brown-dark);
+    --primary-contrast-light: var(--brown-contrast-light);
+    --primary-contrast-dark: var(--brown-contrast-dark);
+
+    --secondary-light: var(--yellow-light);
+    --secondary-dark: var(--yellow-dark);
+    --secondary-contrast-light: var(--yellow-contrast-light);
+    --secondary-contrast-dark: var(--yellow-contrast-dark);
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    padding: 0 2.5%;
+}
+
+/* Universal header */
+header#universal-header {
+    padding: 1rem 0 1rem 0;
+    border-bottom: 0.0625rem solid var(--primary-light);
+    text-align: center;
+}
+
+h1#universal-title {
+    margin: 0;
+    font-size: 3rem;
+    line-height: 1.25em;
+    color: var(--primary-light);
+}
+
+p#universal-description {
+    margin: 0.25em 0 0 0;
+    font-size: 1.25rem;
+    line-height: 1.5em;
+    color: var(--secondary-light);
+}
+
+/* Universal footer */
+footer#universal-footer {
+    border-top: 0.0625rem solid var(--primary-light);
+}
+
+footer#universal-footer p,
+footer#universal-footer a {
+    font-size: 0.75rem;
+    color: var(--secondary-light);
+}
+
+footer#universal-footer a:hover {
+    color: var(--secondary-contrast-light);
+}
+
+main {
+    margin: 0 0 2rem 0;
+}
+
+/* Head */
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 1.25em 0 0 0;
+    line-height: 1.25em;
+    color: var(--primary-light);
+}
+
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+    text-decoration: none;
+}
+
+h2 {
+    font-size: 1.75rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+h4 {
+    font-size: 1.25rem;
+}
+
+h5 {
+    font-size: 1rem;
+}
+
+h6 {
+    font-size: 0.75rem;
+}
+
+
+/* Text */
+p {
+    margin: 0.75em 0 0 0;
+    font-size: 1rem;
+    line-height: 1.5em;
+}
+
+
+/* Link */
+a {
+    text-decoration: underline;
+    color: var(--primary-light);
+    transition: color 0.1s;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: var(--primary-contrast-light);
+}
+
+
+/* List */
+ul,
+ol {
+    margin: 0.75rem 0 0 1em;
+    padding-left: 0;
+    list-style-position: outside;
+}
+
+ul ul,
+ul ol,
+ol ol,
+ol ul {
+    margin: 0 0 0 2em;
+    /* padding-left: 2rem; */
+}
+
+ul li,
+ol li {
+    font-size: 1rem;
+    line-height: 1.5em;
+}
+
+/* Details */
+details {
+    margin: 0.75em 0 0 0;
+}
+
+summary {
+    margin-left: 1em;
+    font-size: 1rem;
+    line-height: 1.5em;
+    list-style-position: outside;
+    cursor: pointer;
+    color: var(--primary-light);
+    transition: color 1s;
+}
+
+summary:hover {
+    color: var(--primary-contrast-light);
+    text-decoration: underline;
+}
+
+details .details-content {
+    padding-left: 1em;
+}
