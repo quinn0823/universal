@@ -26,7 +26,7 @@ universal
 
 ``` html
 <head>
-    <title>Template | Jonathan's Bytecraft</title>
+    <title>Template</title>
 
     <meta name="author" content="Jonathan Chiu" />
     <meta name="license" content="MIT" />
