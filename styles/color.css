@@ -1,0 +1,394 @@
+/* Universal
+The MIT License (MIT)
+Copyright (c) 2025 Jonathan Chiu */
+
+:root {
+    --red-light: rgb(255, 56, 60);
+    --red-dark: rgb(255, 66, 69);
+    --red-contrast-light: rgb(233, 21, 45);
+    --red-contrast-dark: rgb(255, 97, 101);
+
+    --orange-light: rgb(255, 141, 40);
+    --orange-dark: rgb(255, 146, 48);
+    --orange-contrast-light: rgb(197, 83, 0);
+    --orange-contrast-dark: rgb(255, 160, 86);
+
+    --yellow-light: rgb(255, 204, 0);
+    --yellow-dark: rgb(255, 214, 0);
+    --yellow-contrast-light: rgb(161, 106, 0);
+    --yellow-contrast-dark: rgb(254, 223, 67);
+
+    --green-light: rgb(52, 199, 89);
+    --green-dark: rgb(48, 209, 88);
+    --green-contrast-light: rgb(0, 137, 50);
+    --green-contrast-dark: rgb(74, 217, 104);
+
+    --mint-light: rgb(0, 200, 179);
+    --mint-dark: rgb(0, 218, 195);
+    --mint-contrast-light: rgb(0, 133, 117);
+    --mint-contrast-dark: rgb(84, 223, 203);
+
+    --teal-light: rgb(0, 195, 208);
+    --teal-dark: rgb(0, 210, 224);
+    --teal-contrast-light: rgb(0, 129, 152);
+    --teal-contrast-dark: rgb(59, 221, 236);
+
+    --cyan-light: rgb(0, 192, 232);
+    --cyan-dark: rgb(60, 211, 254);
+    --cyan-contrast-light: rgb(0, 126, 173);
+    --cyan-contrast-dark: rgb(109, 217, 255);
+
+    --blue-light: rgb(0, 136, 255);
+    --blue-dark: rgb(0, 145, 255);
+    --blue-contrast-light: rgb(30, 110, 233);
+    --blue-contrast-dark: rgb(92, 184, 255);
+
+    --indigo-light: rgb(97, 85, 245);
+    --indigo-dark: rgb(107, 93, 255);
+    --indigo-contrast-light: rgb(86, 74, 222);
+    --indigo-contrast-dark: rgb(167, 170, 255);
+
+    --purple-light: rgb(203, 48, 224);
+    --purple-dark: rgb(219, 52, 242);
+    --purple-contrast-light: rgb(176, 47, 194);
+    --purple-contrast-dark: rgb(234, 141, 255);
+
+    --pink-light: rgb(255, 45, 85);
+    --pink-dark: rgb(255, 55, 95);
+    --pink-contrast-light: rgb(231, 18, 77);
+    --pink-contrast-dark: rgb(255, 138, 196);
+
+    --brown-light: rgb(172, 127, 94);
+    --brown-dark: rgb(183, 138, 102);
+    --brown-contrast-light: rgb(149, 109, 81);
+    --brown-contrast-dark: rgb(219, 166, 121);
+
+    --gray-light: rgb(142, 142, 147);
+    --gray-dark: rgb(142, 142, 147);
+    --gray-contrast-light: rgb(108, 108, 112);
+    --gray-contrast-dark: rgb(174, 174, 178);
+
+    --gray2-light: rgb(174, 174, 178);
+    --gray2-dark: rgb(99, 99, 102);
+    --gray2-contrast-light: rgb(142, 142, 147);
+    --gray2-contrast-dark: rgb(124, 124, 128);
+
+    --gray3-light: rgb(199, 199, 204);
+    --gray3-dark: rgb(72, 72, 74);
+    --gray3-contrast-light: rgb(174, 174, 178);
+    --gray3-contrast-dark: rgb(84, 84, 86);
+
+    --gray4-light: rgb(209, 209, 214);
+    --gray4-dark: rgb(58, 58, 60);
+    --gray4-contrast-light: rgb(188, 188, 192);
+    --gray4-contrast-dark: rgb(68, 68, 70);
+
+    --gray5-light: rgb(229, 229, 234);
+    --gray5-dark: rgb(44, 44, 46);
+    --gray5-contrast-light: rgb(216, 216, 220);
+    --gray5-contrast-dark: rgb(54, 54, 56);
+
+    --gray6-light: rgb(242, 242, 247);
+    --gray6-dark: rgb(28, 28, 30);
+    --gray6-contrast-light: rgb(235, 235, 240);
+    --gray6-contrast-dark: rgb(36, 36, 38);
+
+
+    --ios-red-light: rgb(255, 59, 48);
+    --ios-red-dark: rgb(255, 69, 58);
+    --ios-red-contrast-light: rgb(215, 0, 21);
+    --ios-red-contrast-dark: rgb(255, 105, 97);
+
+    --ios-orange-light: rgb(255, 149, 0);
+    --ios-orange-dark: rgb(255, 159, 10);
+    --ios-orange-contrast-light: rgb(201, 52, 0);
+    --ios-orange-contrast-dark: rgb(255, 179, 64);
+
+    --ios-yellow-light: rgb(255, 204, 0);
+    --ios-yellow-dark: rgb(255, 214, 10);
+    --ios-yellow-contrast-light: rgb(178, 80, 0);
+    --ios-yellow-contrast-dark: rgb(255, 212, 38);
+
+    --ios-green-light: rgb(52, 199, 89);
+    --ios-green-dark: rgb(48, 209, 88);
+    --ios-green-contrast-light: rgb(36, 138, 61);
+    --ios-green-contrast-dark: rgb(48, 219, 91);
+
+    --ios-mint-light: rgb(0, 199, 190);
+    --ios-mint-dark: rgb(99, 230, 226);
+    --ios-mint-contrast-light: rgb(12, 129, 123);
+    --ios-mint-contrast-dark: rgb(102, 212, 207);
+
+    --ios-teal-light: rgb(48, 176, 199);
+    --ios-teal-dark: rgb(64, 200, 224);
+    --ios-teal-contrast-light: rgb(0, 130, 153);
+    --ios-teal-contrast-dark: rgb(93, 230, 255);
+
+    --ios-cyan-light: rgb(50, 173, 230);
+    --ios-cyan-dark: rgb(100, 210, 255);
+    --ios-cyan-contrast-light: rgb(0, 113, 164);
+    --ios-cyan-contrast-dark: rgb(112, 215, 255);
+
+    --ios-blue-light: rgb(0, 122, 255);
+    --ios-blue-dark: rgb(10, 132, 255);
+    --ios-blue-contrast-light: rgb(0, 64, 221);
+    --ios-blue-contrast-dark: rgb(64, 156, 255);
+
+    --ios-indigo-light: rgb(88, 86, 214);
+    --ios-indigo-dark: rgb(94, 92, 230);
+    --ios-indigo-contrast-light: rgb(54, 52, 163);
+    --ios-indigo-contrast-dark: rgb(125, 122, 255);
+
+    --ios-purple-light: rgb(175, 82, 222);
+    --ios-purple-dark: rgb(191, 90, 242);
+    --ios-purple-contrast-light: rgb(137, 68, 171);
+    --ios-purple-contrast-dark: rgb(218, 143, 255);
+
+    --ios-pink-light: rgb(255, 45, 85);
+    --ios-pink-dark: rgb(255, 55, 95);
+    --ios-pink-contrast-light: rgb(211, 15, 69);
+    --ios-pink-contrast-dark: rgb(255, 100, 130);
+
+    --ios-brown-light: rgb(162, 132, 94);
+    --ios-brown-dark: rgb(172, 142, 104);
+    --ios-brown-contrast-light: rgb(127, 101, 69);
+    --ios-brown-contrast-dark: rgb(181, 148, 105);
+
+    --ios-gray-light: rgb(142, 142, 147);
+    --ios-gray-dark: rgb(142, 142, 147);
+    --ios-gray-contrast-light: rgb(108, 108, 112);
+    --ios-gray-contrast-dark: rgb(174, 174, 178);
+
+    --ios-gray2-light: rgb(174, 174, 178);
+    --ios-gray2-dark: rgb(99, 99, 102);
+    --ios-gray2-contrast-light: rgb(142, 142, 147);
+    --ios-gray2-contrast-dark: rgb(124, 124, 128);
+
+    --ios-gray3-light: rgb(199, 199, 204);
+    --ios-gray3-dark: rgb(72, 72, 74);
+    --ios-gray3-contrast-light: rgb(174, 174, 178);
+    --ios-gray3-contrast-dark: rgb(84, 84, 86);
+
+    --ios-gray4-light: rgb(209, 209, 214);
+    --ios-gray4-dark: rgb(58, 58, 60);
+    --ios-gray4-contrast-light: rgb(188, 188, 192);
+    --ios-gray4-contrast-dark: rgb(68, 68, 70);
+
+    --ios-gray5-light: rgb(229, 229, 234);
+    --ios-gray5-dark: rgb(44, 44, 46);
+    --ios-gray5-contrast-light: rgb(216, 216, 220);
+    --ios-gray5-contrast-dark: rgb(54, 54, 56);
+
+    --ios-gray6-light: rgb(242, 242, 247);
+    --ios-gray6-dark: rgb(28, 28, 30);
+    --ios-gray6-contrast-light: rgb(235, 235, 240);
+    --ios-gray6-contrast-dark: rgb(36, 36, 38);
+
+
+    --macos-red-light: rgb(255, 59, 48);
+    --macos-red-dark: rgb(255, 69, 58);
+    --macos-red-contrast-light: rgb(215, 0, 21);
+    --macos-red-contrast-dark: rgb(255, 105, 97);
+
+    --macos-orange-light: rgb(255, 149, 0);
+    --macos-orange-dark: rgb(255, 159, 10);
+    --macos-orange-contrast-light: rgb(201, 52, 0);
+    --macos-orange-contrast-dark: rgb(255, 179, 64);
+
+    --macos-yellow-light: rgb(255, 204, 0);
+    --macos-yellow-dark: rgb(255, 214, 10);
+    --macos-yellow-contrast-light: rgb(160, 90, 0);
+    --macos-yellow-contrast-dark: rgb(255, 212, 38);
+
+    --macos-green-light: rgb(40, 205, 65);
+    --macos-green-dark: rgb(50, 215, 75);
+    --macos-green-contrast-light: rgb(0, 125, 27);
+    --macos-green-contrast-dark: rgb(49, 222, 75);
+
+    --macos-mint-light: rgb(0, 199, 190);
+    --macos-mint-dark: rgb(102, 212, 207);
+    --macos-mint-contrast-light: rgb(12, 129, 123);
+    --macos-mint-contrast-dark: rgb(102, 212, 207);
+
+    --macos-teal-light: rgb(89, 173, 196);
+    --macos-teal-dark: rgb(106, 196, 220);
+    --macos-teal-contrast-light: rgb(0, 130, 153);
+    --macos-teal-contrast-dark: rgb(93, 230, 255);
+
+    --macos-cyan-light: rgb(85, 190, 240);
+    --macos-cyan-dark: rgb(90, 200, 245);
+    --macos-cyan-contrast-light: rgb(0, 113, 164);
+    --macos-cyan-contrast-dark: rgb(112, 215, 255);
+
+    --macos-blue-light: rgb(0, 122, 255);
+    --macos-blue-dark: rgb(10, 132, 255);
+    --macos-blue-contrast-light: rgb(0, 64, 221);
+    --macos-blue-contrast-dark: rgb(64, 156, 255);
+
+    --macos-indigo-light: rgb(88, 86, 214);
+    --macos-indigo-dark: rgb(94, 92, 230);
+    --macos-indigo-contrast-light: rgb(54, 52, 163);
+    --macos-indigo-contrast-dark: rgb(125, 122, 255);
+
+    --macos-purple-light: rgb(175, 82, 222);
+    --macos-purple-dark: rgb(191, 90, 242);
+    --macos-purple-contrast-light: rgb(137, 68, 171);
+    --macos-purple-contrast-dark: rgb(218, 143, 255);
+
+    --macos-pink-light: rgb(255, 45, 85);
+    --macos-pink-dark: rgb(255, 55, 95);
+    --macos-pink-contrast-light: rgb(211, 15, 69);
+    --macos-pink-contrast-dark: rgb(255, 100, 130);
+
+    --macos-brown-light: rgb(162, 132, 94);
+    --macos-brown-dark: rgb(172, 142, 104);
+    --macos-brown-contrast-light: rgb(127, 101, 69);
+    --macos-brown-contrast-dark: rgb(181, 148, 105);
+
+    --macos-gray-light: rgb(142, 142, 147);
+    --macos-gray-dark: rgb(152, 152, 157);
+    --macos-gray-contrast-light: rgb(105, 105, 110);
+    --macos-gray-contrast-dark: rgb(152, 152, 157);
+
+
+    --tvos-red-light: rgb(255, 59, 48);
+    --tvos-red-dark: rgb(255, 69, 58);
+    --tvos-red-contrast-light: rgb(224, 6, 27);
+    --tvos-red-contrast-dark: rgb(255, 69, 58);
+
+    --tvos-orange-light: rgb(255, 149, 0);
+    --tvos-orange-dark: rgb(255, 159, 10);
+    --tvos-orange-contrast-light: rgb(208, 50, 0);
+    --tvos-orange-contrast-dark: rgb(255, 159, 10);
+
+    --tvos-yellow-light: rgb(255, 204, 0);
+    --tvos-yellow-dark: rgb(255, 214, 10);
+    --tvos-yellow-contrast-light: rgb(147, 106, 54);
+    --tvos-yellow-contrast-dark: rgb(255, 203, 43);
+
+    --tvos-green-light: rgb(52, 199, 89);
+    --tvos-green-dark: rgb(50, 215, 75);
+    --tvos-green-contrast-light: rgb(0, 125, 27);
+    --tvos-green-contrast-dark: rgb(48, 219, 91);
+
+    --tvos-mint-light: rgb(0, 199, 190);
+    --tvos-mint-dark: rgb(99, 230, 226);
+    --tvos-mint-contrast-light: rgb(12, 129, 123);
+    --tvos-mint-contrast-dark: rgb(99, 230, 226);
+
+    --tvos-teal-light: rgb(48, 176, 199);
+    --tvos-teal-dark: rgb(64, 200, 224);
+    --tvos-teal-contrast-light: rgb(0, 130, 153);
+    --tvos-teal-contrast-dark: rgb(93, 230, 255);
+
+    --tvos-cyan-light: rgb(50, 173, 230);
+    --tvos-cyan-dark: rgb(100, 210, 255);
+    --tvos-cyan-contrast-light: rgb(0, 113, 164);
+    --tvos-cyan-contrast-dark: rgb(112, 215, 255);
+
+    --tvos-blue-light: rgb(0, 122, 255);
+    --tvos-blue-dark: rgb(10, 132, 255);
+    --tvos-blue-contrast-light: rgb(0, 64, 221);
+    --tvos-blue-contrast-dark: rgb(64, 156, 255);
+
+    --tvos-indigo-light: rgb(88, 86, 214);
+    --tvos-indigo-dark: rgb(94, 92, 230);
+    --tvos-indigo-contrast-light: rgb(70, 68, 171);
+    --tvos-indigo-contrast-dark: rgb(104, 98, 229);
+
+    --tvos-purple-light: rgb(175, 82, 222);
+    --tvos-purple-dark: rgb(191, 90, 242);
+    --tvos-purple-contrast-light: rgb(175, 82, 222);
+    --tvos-purple-contrast-dark: rgb(234, 145, 254);
+
+    --tvos-pink-light: rgb(255, 80, 102);
+    --tvos-pink-dark: rgb(255, 55, 95);
+    --tvos-pink-contrast-light: rgb(218, 15, 71);
+    --tvos-pink-contrast-dark: rgb(255, 59, 95);
+
+    --tvos-brown-light: rgb(162, 132, 94);
+    --tvos-brown-dark: rgb(172, 142, 104);
+    --tvos-brown-contrast-light: rgb(127, 101, 69);
+    --tvos-brown-contrast-dark: rgb(181, 148, 105);
+
+    --tvos-gray-light: rgb(142, 142, 147);
+    --tvos-gray-dark: rgb(142, 142, 147);
+    --tvos-gray-contrast-light: rgb(108, 108, 112);
+    --tvos-gray-contrast-dark: rgb(174, 174, 178);
+
+
+    --visionos-red: rgb(255, 69, 58);
+    --visionos-orange: rgb(255, 159, 10);
+    --visionos-yellow: rgb(255, 214, 10);
+    --visionos-green: rgb(50, 215, 75);
+    --visionos-mint: rgb(102, 212, 207);
+    --visionos-teal: rgb(106, 196, 220);
+    --visionos-cyan: rgb(90, 200, 245);
+    --visionos-blue: rgb(10, 132, 255);
+    --visionos-indigo: rgb(94, 92, 230);
+    --visionos-purple: rgb(191, 90, 242);
+    --visionos-pink: rgb(255, 55, 95);
+    --visionos-brown: rgb(172, 142, 104);
+    --visionos-gray: rgb(152, 152, 157);
+
+
+    --watchos-red-light: rgb(246, 52, 40);
+    --watchos-red-dark: rgb(255, 59, 48);
+    --watchos-red-contrast-light: rgb(215, 0, 21);
+    --watchos-red-contrast-dark: rgb(255, 105, 97);
+
+    --watchos-orange-light: rgb(255, 140, 0);
+    --watchos-orange-dark: rgb(255, 149, 0);
+    --watchos-orange-contrast-light: rgb(177, 90, 0);
+    --watchos-orange-contrast-dark: rgb(255, 179, 64);
+
+    --watchos-yellow-light: rgb(255, 204, 0);
+    --watchos-yellow-dark: rgb(255, 214, 10);
+    --watchos-yellow-contrast-light: rgb(143, 116, 0);
+    --watchos-yellow-contrast-dark: rgb(255, 242, 97);
+
+    --watchos-green-light: rgb(2, 212, 106);
+    --watchos-green-dark: rgb(4, 222, 113);
+    --watchos-green-contrast-light: rgb(0, 134, 74);
+    --watchos-green-contrast-dark: rgb(12, 255, 134);
+
+    --watchos-mint-light: rgb(0, 199, 190);
+    --watchos-mint-dark: rgb(0, 245, 234);
+    --watchos-mint-contrast-light: rgb(12, 129, 123);
+    --watchos-mint-contrast-dark: rgb(108, 255, 249);
+
+    --watchos-teal-light: rgb(48, 176, 199);
+    --watchos-teal-dark: rgb(64, 200, 224);
+    --watchos-teal-contrast-light: rgb(0, 130, 153);
+    --watchos-teal-contrast-dark: rgb(93, 230, 255);
+
+    --watchos-cyan-light: rgb(50, 173, 230);
+    --watchos-cyan-dark: rgb(90, 200, 250);
+    --watchos-cyan-contrast-light: rgb(0, 113, 164);
+    --watchos-cyan-contrast-dark: rgb(112, 215, 255);
+
+    --watchos-blue-light: rgb(0, 122, 255);
+    --watchos-blue-dark: rgb(32, 148, 250);
+    --watchos-blue-contrast-light: rgb(0, 64, 221);
+    --watchos-blue-contrast-dark: rgb(90, 168, 255);
+
+    --watchos-indigo-light: rgb(88, 86, 214);
+    --watchos-indigo-dark: rgb(120, 122, 255);
+    --watchos-indigo-contrast-light: rgb(54, 52, 163);
+    --watchos-indigo-contrast-dark: rgb(155, 153, 255);
+
+    --watchos-purple-light: rgb(175, 82, 222);
+    --watchos-purple-dark: rgb(191, 90, 242);
+    --watchos-purple-contrast-light: rgb(137, 68, 171);
+    --watchos-purple-contrast-dark: rgb(218, 143, 255);
+
+    --watchos-pink-light: rgb(234, 14, 74);
+    --watchos-pink-dark: rgb(250, 17, 79);
+    --watchos-pink-contrast-light: rgb(211, 15, 69);
+    --watchos-pink-contrast-dark: rgb(255, 100, 130);
+
+    --watchos-brown-light: rgb(162, 132, 94);
+    --watchos-brown-dark: rgb(172, 142, 104);
+    --watchos-brown-contrast-light: rgb(127, 101, 69);
+    --watchos-brown-contrast-dark: rgb(219, 178, 124);
+}
