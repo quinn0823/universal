@@ -109,6 +109,10 @@ p {
     line-height: 1.5em;
 }
 
+p.secondary,
+.secondary p {
+    color: var(--secondary-light);
+}
 
 /* Link */
 a {
@@ -120,6 +124,19 @@ a {
 a:hover {
     text-decoration: underline;
     color: var(--primary-contrast-light);
+}
+
+a.secondary,
+.secondary a {
+    text-decoration: underline;
+    color: var(--secondary-light);
+    transition: color .25s;
+}
+
+a.secondary:hover,
+.secondary a:hover {
+    text-decoration: underline;
+    color: var(--secondary-contrast-light);
 }
 
 
