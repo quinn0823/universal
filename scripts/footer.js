@@ -152,7 +152,7 @@ function getLocalization(key) {
     // console.log(footerHtmlArray);
 
     footerHtmlArray = footerHtmlArray.map(item => `<p>${item}</p>`);
-    const footerHtml = `<hr />${footerHtmlArray.join('')}`;
+    const footerHtml = footerHtmlArray.join('');
 
     const footerElement = document.getElementById('universal-footer');
     footerElement.innerHTML = footerHtml;
