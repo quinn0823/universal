@@ -56,8 +56,10 @@ function getLocalization(key) {
 }
 
 (function () {
-    let baseUri = 'https://quinn0823.github.io/universal/'
-    baseUri = document.baseURI;
+    let baseUri = document.baseURI;
+    if (!baseUri.includes('github.io')) {
+        baseUri = 'https://quinn0823.github.io/universal/';
+    }
     const domain = baseUri.split('/')[2];
     const githubUserName = domain.split('.')[0];
     const githubRepoName = baseUri.split('/')[3];
