@@ -305,15 +305,6 @@ input.input-flex {
     flex: 1;
 }
 
-input.input-outline,
-button.button-outline {
-    margin-top: var(--spacing-margin-2);
-}
-
-/* input.input-inline {
-    font-size: var(--font-size-2);
-} */
-
 input:hover {
     border-color: var(--primary-contrast-light);
 }
@@ -338,4 +329,25 @@ button:hover {
 button:active {
     background-color: var(--primary-light);
     transition: none;
+}
+
+input.input-outline,
+button.button-outline {
+    margin-top: var(--spacing-margin-2);
+}
+
+input.input-inline-start,
+button.button-inline-start {
+    margin: 0 0 0 var(--text-padding-1);
+}
+input.input-inline,
+input.input-inline-middle,
+button.button-inline,
+button.button-inline-middle {
+    margin: 0 var(--text-padding-1) 0 var(--text-padding-1);
+}
+
+input.input-inline-end,
+button.button-inline-end {
+    margin: 0 var(--text-padding-1) 0 0;
 }
