@@ -113,14 +113,15 @@ universal
 
 ## Projects Powered by Universal
 
+- *[81-names](https://github.com/quinn0823/81-names)* (private): 81 Names 是一个姓名工具。
 - [formula-writer](https://github.com/quinn0823/formula-writer): 公式默写器用于默写并检查物理学运动学公式。
 - [universal](): The universal images, styles and scripts for my web projects.
 - [web-dock](https://github.com/quinn0823/web-dock): The Web Dock is a convenient place to access pages of my personal website—just like the Dock on the Mac desktop.
-- *[yi-ology](https://github.com/quinn0823/yi-ology)* (private): 易学 (Yi-Ology)
+- *[yi-ology](https://github.com/quinn0823/yi-ology)* (private): 易学。
 
 ---
 
-Updated Date: June 19, 2025
+Updated Date: June 20, 2025
 
 The MIT License (MIT)
 
