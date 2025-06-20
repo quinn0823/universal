@@ -12,6 +12,7 @@ Copyright (c) 2025 Jonathan Chiu -->
 	<title>Universal</title>
 
 	<link rel="stylesheet" href="./styles/main.css" type="text/css" />
+	<link rel="stylesheet" href="./styles/layout.css" type="text/css" />
 	<link rel="icon" href="./images/logos/logo-transparent-fill.png" type="image/png" />
 	<link rel="apple-touch-icon" href="./images/logos/logo-white-fit.png" type="image/png" />
 
@@ -51,17 +52,20 @@ Copyright (c) 2025 Jonathan Chiu -->
 		</ul>
 
 		<h2 id="h2"><a href="#h2">H2</a></h2>
-		<p>This is a paragraph.</p>
+		<p>This is a paragraph. <span class="secondary">The <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/p" target="_blank">p</a> element represents a paragraph.</span></p>
+		<p>H<sub>2</sub>O</p>
+		<p>a<sup>2</sup> + b<sup>2</sup> = c<sup>2</sup></p>
 
 		<h3 id="h3"><a href="#h3">H3</a></h3>
 		<ul>
-			<li>This is an item of an unordered list.</li>
+			<li>This is an item of an unordered list.
+				<ol>
+					<li>This is the 1<sup>st</sup> item of an ordered list.</li>
+					<li>This is the 2<sup>nd</sup> item of an ordered list.</li>
+				</ol>
+			</li>
 			<li>This is an item of an unordered list.</li>
 		</ul>
-		<ol>
-			<li>This is the 1<sup>st</sup> item of an ordered list.</li>
-			<li>This is the 2<sup>nd</sup> item of an ordered list</li>
-		</ol>
 
 		<h4 id="h4"><a href="#h4">H4</a></h4>
 		<details>
@@ -70,18 +74,40 @@ Copyright (c) 2025 Jonathan Chiu -->
 				<p>The details element represents a disclosure widget from which the user can obtain additional information or controls.</p>
 				<ul>
 					<li>This is an item of an unordered list.</li>
+					<li>This is an item of an unordered list.
+						<details>
+							<summary>Details</summary>
+							<div class="details-content">
+								<p>The details element represents a disclosure widget from which the user can obtain additional information or controls.</p>
+							</div>
+						</details>
+					</li>
+					<li>This is an item of an unordered list.
+						<ol>
+							<li>This is the 1<sup>st</sup> item of an ordered list.</li>
+							<li>This is the 2<sup>nd</sup> item of an ordered list.</li>
+						</ol>
+					</li>
+					<details>
+						<summary>This is an item of an unordered list too.</summary>
+						<div class="details-content">
+							<p>The details element represents a disclosure widget from which the user can obtain additional information or controls.</p>
+							<details>
+								<summary>Details</summary>
+								<div class="details-content">
+									<p>Don't go any deeper.</p>
+									<details class="secondary">
+										<summary>Details</summary>
+										<div class="details-content">
+											<p>There are no more details.</p>
+										</div>
+									</details>
+								</div>
+							</details>
+						</div>
+					</details>
 					<li>This is an item of an unordered list.</li>
 				</ul>
-				<ol>
-					<li>This is the 1<sup>st</sup> item of an ordered list.</li>
-					<li>This is the 2<sup>nd</sup> item of an ordered list</li>
-				</ol>
-				<details>
-					<summary>Details</summary>
-					<div class="details-content">
-						<p>The details element represents a disclosure widget from which the user can obtain additional information or controls.</p>
-					</div>
-				</details>
 			</div>
 		</details>
 
