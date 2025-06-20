@@ -165,12 +165,45 @@ details {
     border: var(--border-size) solid var(--primary-light);
     border-radius: var(--border-radius-1);
     background-color: var(--primary-light);
+    transition:
+        border-color var(--transition-duration),
+        background-color var(--transition-duration);
+}
+
+details:hover,
+details[open],
+details[open]:active {
+    border-color: var(--primary-contrast-light);
+    background-color: var(--primary-contrast-light);
+}
+
+details:active {
+    border-color: var(--primary-light);
+    background-color: var(--primary-light);
+    transition: none;
 }
 
 details.secondary,
 .secondary details {
     border-color: var(--secondary-light);
     background-color: var(--secondary-light);
+}
+
+details.secondary:hover,
+details.secondary[open],
+details.secondary[open]:active,
+.secondary details:hover,
+.secondary details[open],
+.secondary details[open]:active {
+    border-color: var(--secondary-contrast-light);
+    background-color: var(--secondary-contrast-light);
+}
+
+details.secondary:active,
+.secondary details:active {
+    border-color: var(--secondary-light);
+    background-color: var(--secondary-light);
+    transition: none;
 }
 
 details summary {
@@ -268,6 +301,7 @@ input {
 }
 
 input.input-flex {
+    width: 100%;
     flex: 1;
 }
 
@@ -291,8 +325,8 @@ button {
     color: #fff;
     background-color: var(--primary-light);
     transition:
-        background-color var(--transition-duration),
-        border-color var(--transition-duration);
+        border-color var(--transition-duration),
+        background-color var(--transition-duration);
     cursor: pointer;
 }
 
