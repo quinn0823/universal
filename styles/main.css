@@ -245,6 +245,9 @@ li>p {
 /* Form */
 .form {
     margin: var(--spacing-margin-2) 0 0 0;
+}
+.form-flex {
+    margin: var(--spacing-margin-2) 0 0 0;
     display: flex;
     align-items: center;
     gap: var(--text-padding-1);
