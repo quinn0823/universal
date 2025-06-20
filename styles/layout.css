@@ -1,0 +1,39 @@
+/* Universal
+The MIT License (MIT)
+Copyright (c) 2025 Jonathan Chiu */
+
+/* Universal header */
+header#universal-header {
+    padding: 1rem 0 1rem 0;
+    border-bottom: .125rem solid var(--primary-light);
+    text-align: center;
+}
+
+h1#universal-title {
+    margin: 0;
+    font-size: 3rem;
+    line-height: 1.25em;
+    color: var(--primary-light);
+}
+
+p#universal-description {
+    margin: 0.25em 0 0 0;
+    font-size: 1.25rem;
+    line-height: 1.5em;
+    color: var(--secondary-light);
+}
+
+/* Universal footer */
+footer#universal-footer {
+    border-top: .125rem solid var(--primary-light);
+}
+
+footer#universal-footer p,
+footer#universal-footer a {
+    font-size: 0.75rem;
+    color: var(--secondary-light);
+}
+
+footer#universal-footer a:hover {
+    color: var(--secondary-contrast-light);
+}
