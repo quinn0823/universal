@@ -259,11 +259,23 @@ button {
 }
 
 input {
-    flex: 1;
     border-radius: var(--border-radius-1);
     font-size: var(--font-size-1);
     transition: border var(--transition-duration);
 }
+
+input.input-flex {
+    flex: 1;
+}
+
+input.input-outline,
+button.button-outline {
+    margin-top: var(--spacing-margin-2);
+}
+
+/* input.input-inline {
+    font-size: var(--font-size-2);
+} */
 
 input:hover {
     border-color: var(--primary-contrast-light);
