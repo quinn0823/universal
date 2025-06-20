@@ -78,7 +78,7 @@ function getLocalization(key) {
     // console.log(metaContent);
 
     // Description
-    const description = metaContent['description'];
+    const description = headerMetaContent['description'];
     const descriptionHtml = `<p id="universal-description">${description}</p>`;
     headerHtmlArray.push(descriptionHtml);
 
