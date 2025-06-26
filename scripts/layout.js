@@ -120,7 +120,7 @@ function getLocalization(key) {
         'x': {
             'enable': false,
             'text': getLocalization('universal.footer.links.twitter'),
-            'url': 'https://x.com/jonathanchiu'
+            'url': 'https://x.com/jonathanchiu98'
         },
         'weibo': {
             'enable': false,
