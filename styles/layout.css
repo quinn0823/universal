@@ -4,7 +4,7 @@ Copyright (c) 2025 Jonathan Chiu */
 
 /* Universal header */
 header#universal-header {
-    border-bottom: var(--border-size-1) solid var(--primary-light);
+    border-bottom: var(--border-size) solid var(--primary);
     padding: .5em 0;
     font-size: 3rem;
     text-align: center;
@@ -14,38 +14,37 @@ h1#universal-title {
     margin: 0;
     font-size: 1em;
     line-height: var(--line-height);
-    color: var(--primary-light);
+    color: var(--primary);
 }
 
 p#universal-description {
     margin: 0;
     font-size: 1.25rem;
     line-height: var(--line-height);
-    color: var(--secondary-light);
+    color: var(--secondary);
 }
 
 /* Universal footer */
 footer#universal-footer {
-    border-top: var(--border-size-1) solid var(--primary-light);
-    padding: 0 0 1.5em 0;
-    font-size: .75rem;
+    border-top: var(--border-size) solid var(--primary);
+    padding: 0 0 var(--spacing-y-large) 0;
 }
 
 footer#universal-footer p {
-    font-size: 1em;
-    color: var(--secondary-light);
+    font-size: var(--font-size-small);
+    color: var(--secondary);
 }
 
 footer#universal-footer a {
-    color: var(--secondary-light);
+    color: var(--secondary);
     transition: var(--transition-duration);
 }
 
 footer#universal-footer a:hover {
-    color: var(--secondary-contrast-light);
+    color: var(--secondary-contrast);
 }
 
 footer#universal-footer a:active {
-    color: var(--secondary-light);
+    color: var(--secondary);
     transition-duration: 0s;
 }

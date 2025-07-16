@@ -5,57 +5,70 @@ Copyright (c) 2025 Jonathan Chiu */
 @import url("./color.css");
 
 :root {
-    --spacing-margin-1: 1.5em;
-    --spacing-margin-2: .75em;
-    --indent-margin: 2rem;
+    --spacing-y: .75em;
+    --spacing-y-large: 1.5em;
+    --spacing-x: .5rem;
+    --spacing-indent: 2rem;
 
-    --border-size-1: .125rem;
+    --border-size: .125rem;
     --border-radius: .75em;
     --border-radius-form: 1em;
 
-    --gap: .5rem;
-    --text-padding: .5em;
+    --padding-surface: .5em;
 
     --line-height: 1.5em;
     --line-height-form: 2em;
-    --font-size-1: 1rem;
-    --font-size-2: .75rem;
 
-    --color-light: #000;
-    --color-dark: #fff;
+    --font-size: 1rem;
+    --font-size-small: .75rem;
 
-    --background-color-light: #fff;
-    --background-color-dark: #000;
+    --primary: var(--brown-light);
+    --primary-contrast: var(--brown-contrast-light);
 
-    --primary-light: var(--brown-light);
-    --primary-dark: var(--brown-dark);
-    --primary-contrast-light: var(--brown-contrast-light);
-    --primary-contrast-dark: var(--brown-contrast-dark);
+    --secondary: var(--yellow-light);
+    --secondary-contrast: var(--yellow-contrast-light);
 
-    --secondary-light: var(--yellow-light);
-    --secondary-dark: var(--yellow-dark);
-    --secondary-contrast-light: var(--yellow-contrast-light);
-    --secondary-contrast-dark: var(--yellow-contrast-dark);
+    --gray: var(--gray6-light);
+    --gray-contrast: var(--gray6-contrast-light);
 
-    --global-gray-light: var(--gray5-light);
-    --global-gray-dark: var(--gray5-dark);
-    --global-gray-contrast-light: var(--gray5-contrast-light);
-    --global-gray-contrast-dark: var(--gray5-contrast-dark);
+    --color: #000;
+    --color-invert: #fff;
+
+    --background-color: #fff;
 
     --transition-duration: .25s;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+    --primary: var(--brown-dark);
+    --primary-contrast: var(--brown-contrast-dark);
+
+    --secondary: var(--yellow-dark);
+    --secondary-contrast: var(--yellow-contrast-dark);
+
+    --gray: var(--gray6-dark);
+    --gray-contrast: var(--gray6-contrast-dark);
+
+    --color: #fff;
+    --color-invert: #000;
+
+    --background-color: #000;
+}
 }
 
 body {
     margin: auto;
     padding: 0 20px;
     max-width: 980px;
-    font-size: var(--font-size-1);
+    font-size: var(--font-size);
     font-family: Arial, Helvetica, sans-serif;
-    background-color: var(--background-color-light);
+    color: var(--color);
+    background-color: var(--background-color);
 }
 
 main {
-    margin: 0 0 var(--spacing-margin-1) 0;
+    margin: 0 0 var(--spacing-y-large) 0;
 }
 
 /* Head */
@@ -64,9 +77,9 @@ h3,
 h4,
 h5,
 h6 {
-    margin: var(--spacing-margin-1) 0 0 0;
+    margin: var(--spacing-y-large) 0 0 0;
     line-height: var(--line-height);
-    color: var(--primary-light);
+    color: var(--primary);
 }
 
 h2 a,
@@ -99,62 +112,62 @@ h6 {
 
 /* Paragraph and text */
 p {
-    margin: var(--spacing-margin-2) 0 0 0;
+    margin: var(--spacing-y) 0 0 0;
 }
 
 p,
 li,
 summary {
     line-height: var(--line-height);
-    font-size: var(--font-size-1);
+    font-size: var(--font-size);
 }
 
 .secondary,
 .secondary p,
 .secondary span,
 .secondary li {
-    color: var(--secondary-light);
+    color: var(--secondary);
 }
 
 /* Link */
 a {
-    color: var(--primary-light);
+    color: var(--primary);
     text-decoration: underline;
     transition: color var(--transition-duration);
 }
 
 a:hover {
     text-decoration: underline;
-    color: var(--primary-contrast-light);
+    color: var(--primary-contrast);
 }
 
 a:active {
-    color: var(--primary-light);
+    color: var(--primary);
     transition: none;
 }
 
 
 a.secondary,
 .secondary a {
-    color: var(--secondary-light);
+    color: var(--secondary);
 }
 
 a.secondary:hover,
 .secondary a:hover {
-    color: var(--secondary-contrast-light);
+    color: var(--secondary-contrast);
 }
 
 a.secondary:active,
 .secondary a:active {
-    color: var(--secondary-light);
+    color: var(--secondary);
     transition: none;
 }
 
 /* Sup and sub */
 sup,
 sub {
-    line-height: var(--font-size-2);
-    font-size: var(--font-size-2);
+    line-height: var(--font-size-small);
+    font-size: var(--font-size-small);
 }
 
 sup {
@@ -167,14 +180,14 @@ sub {
 
 /* Details */
 /* details {
-    margin: var(--spacing-margin-2) 0 0 0;
+    margin: var(--spacing-y) 0 0 0;
     border-radius: var(--border-radius);
-    background-color: var(--primary-light);
+    background-color: var(--primary);
     transition: padding var(--transition-duration);
 } */
 
 /* details summary {
-    margin: 0 var(--text-padding) 0 var(--indent-margin);
+    margin: 0 var(--padding-surface) 0 var(--spacing-indent);
     list-style-position: outside;
     color: var(--color-dark);
     cursor: pointer;
@@ -183,14 +196,14 @@ sub {
 /* details .details-content {
     overflow: hidden;
     border-radius: 0 0 var(--border-radius) var(--border-radius);
-    padding: 0 var(--text-padding) var(--spacing-margin-2) var(--indent-margin);
-    background-color: var(--background-color-light);
+    padding: 0 var(--padding-surface) var(--spacing-y) var(--spacing-indent);
+    background-color: var(--background-color);
 } */
 
 /* List */
 ul,
 ol {
-    margin: var(--spacing-margin-2) 0 0 0;
+    margin: var(--spacing-y) 0 0 0;
     padding: 0;
 }
 
@@ -205,32 +218,33 @@ li {
 }
 
 li li {
-    margin-left: var(--indent-margin);
+    margin-left: var(--spacing-indent);
 }
 
 /* Form */
 .form-flex {
-    margin: var(--spacing-margin-2) 0 0 0;
+    margin: var(--spacing-y) 0 0 0;
     display: flex;
     align-items: center;
-    gap: var(--gap);
+    gap: var(--spacing-x);
 }
 
 input {
     border: 0;
     border-radius: var(--border-radius-form);
     box-sizing: border-box;
-    padding: 0 var(--text-padding);
+    padding: 0 var(--padding-surface);
     line-height: var(--line-height-form);
-    height: calc(var(--font-size-1) * 2);
-    font-size: var(--font-size-1);
-    background-color: var(--global-gray-light);
+    height: calc(var(--font-size) * 2);
+    font-size: var(--font-size);
+    color: var(--color);
+    background-color: var(--gray);
     transition: background-color var(--transition-duration);
 }
 
 input:hover,
 input:focus {
-    background-color: var(--global-gray-contrast-light);
+    background-color: var(--gray-contrast);
 }
 
 input.input-flex,
@@ -242,42 +256,42 @@ input.input-flex,
 button {
     border: 0;
     border-radius: var(--border-radius-form);
-    padding: 0 var(--text-padding);
+    padding: 0 var(--padding-surface);
     line-height: var(--line-height-form);
-    font-size: var(--font-size-2);
-    color: var(--color-dark);
-    background-color: var(--primary-light);
+    font-size: var(--font-size-small);
+    color: var(--color-invert);
+    background-color: var(--primary);
     cursor: pointer;
     transition: background-color var(--transition-duration);
 }
 
 button:hover {
-    background-color: var(--primary-contrast-light);
+    background-color: var(--primary-contrast);
 }
 
 button:active {
-    background-color: var(--primary-light);
+    background-color: var(--primary);
     transition: 0s;
 }
 
 input.input-outline,
 button.button-outline {
-    margin-top: var(--spacing-margin-2);
+    margin-top: var(--spacing-y);
 }
 
 /* input.input-inline-start,
 button.button-inline-start {
-    margin: 0 0 0 var(--text-padding);
+    margin: 0 0 0 var(--padding-surface);
 } */
 
 /* input.input-inline,
 input.input-inline-middle,
 button.button-inline,
 button.button-inline-middle {
-    margin: 0 var(--text-padding) 0 var(--text-padding);
+    margin: 0 var(--padding-surface) 0 var(--padding-surface);
 } */
 
 /* input.input-inline-end,
 button.button-inline-end {
-    margin: 0 var(--text-padding) 0 0;
+    margin: 0 var(--padding-surface) 0 0;
 } */
