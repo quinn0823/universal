@@ -306,6 +306,10 @@ input {
     transition: background-color var(--transition-duration);
 }
 
+input::placeholder {
+    color: var(--gray);
+}
+
 input:hover,
 input:focus {
     background-color: var(--input-background-color-contrast);
