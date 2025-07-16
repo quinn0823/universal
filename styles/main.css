@@ -12,49 +12,113 @@ Copyright (c) 2025 Jonathan Chiu */
 
     --border-size: .125rem;
     --border-radius: .75em;
-    --border-radius-form: 1em;
+    --form-border-radius: 1em;
 
-    --padding-surface: .5em;
+    --surface-padding: .5em;
 
     --line-height: 1.5em;
-    --line-height-form: 2em;
+    --form-line-height: 2em;
 
     --font-size: 1rem;
     --font-size-small: .75rem;
 
-    --primary: var(--brown-light);
-    --primary-contrast: var(--brown-contrast-light);
+    --red: var(--red-light);
+    --red-contrast: var(--red-contrast-light);
+    --orange: var(--orange-light);
+    --orange-contrast: var(--orange-contrast-light);
+    --yellow: var(--yellow-light);
+    --yellow-contrast: var(--yellow-contrast-light);
+    --green: var(--green-light);
+    --green-contrast: var(--green-contrast-light);
+    --mint: var(--mint-light);
+    --mint-contrast: var(--mint-contrast-light);
+    --teal: var(--teal-light);
+    --teal-contrast: var(--teal-contrast-light);
+    --cyan: var(--cyan-light);
+    --cyan-contrast: var(--cyan-contrast-light);
+    --blue: var(--blue-light);
+    --blue-contrast: var(--blue-contrast-light);
+    --indigo: var(--indigo-light);
+    --indigo-contrast: var(--indigo-contrast-light);
+    --purple: var(--purple-light);
+    --purple-contrast: var(--purple-contrast-light);
+    --pink: var(--pink-light);
+    --pink-contrast: var(--pink-contrast-light);
+    --brown: var(--brown-light);
+    --brown-contrast: var(--brown-contrast-light);
+    --gray: var(--gray-light);
+    --gray-contrast: var(--gray-contrast-light);
+    --gray2: var(--gray2-light);
+    --gray2-contrast: var(--gray2-contrast-light);
+    --gray3: var(--gray3-light);
+    --gray3-contrast: var(--gray3-contrast-light);
+    --gray4: var(--gray4-light);
+    --gray4-contrast: var(--gray4-contrast-light);
+    --gray5: var(--gray5-light);
+    --gray5-contrast: var(--gray5-contrast-light);
+    --gray6: var(--gray6-light);
+    --gray6-contrast: var(--gray6-contrast-light);
 
-    --secondary: var(--yellow-light);
-    --secondary-contrast: var(--yellow-contrast-light);
+    --primary: var(--brown);
+    --primary-contrast: var(--brown-contrast);
 
-    --gray: var(--gray6-light);
-    --gray-contrast: var(--gray6-contrast-light);
+    --secondary: var(--yellow);
+    --secondary-contrast: var(--yellow-contrast);
 
     --color: #000;
     --color-invert: #fff;
 
     --background-color: #fff;
+    --input-background-color: var(--gray6);
+    --input-background-color-contrast: var(--gray6-contrast);
 
     --transition-duration: .25s;
 }
 
 @media (prefers-color-scheme: dark) {
     :root {
-    --primary: var(--brown-dark);
-    --primary-contrast: var(--brown-contrast-dark);
+        --red: var(--red-dark);
+        --red-contrast: var(--red-contrast-dark);
+        --orange: var(--orange-dark);
+        --orange-contrast: var(--orange-contrast-dark);
+        --yellow: var(--yellow-dark);
+        --yellow-contrast: var(--yellow-contrast-dark);
+        --green: var(--green-dark);
+        --green-contrast: var(--green-contrast-dark);
+        --mint: var(--mint-dark);
+        --mint-contrast: var(--mint-contrast-dark);
+        --teal: var(--teal-dark);
+        --teal-contrast: var(--teal-contrast-dark);
+        --cyan: var(--cyan-dark);
+        --cyan-contrast: var(--cyan-contrast-dark);
+        --blue: var(--blue-dark);
+        --blue-contrast: var(--blue-contrast-dark);
+        --indigo: var(--indigo-dark);
+        --indigo-contrast: var(--indigo-contrast-dark);
+        --purple: var(--purple-dark);
+        --purple-contrast: var(--purple-contrast-dark);
+        --pink: var(--pink-dark);
+        --pink-contrast: var(--pink-contrast-dark);
+        --brown: var(--brown-dark);
+        --brown-contrast: var(--brown-contrast-dark);
+        --gray: var(--gray-dark);
+        --gray-contrast: var(--gray-contrast-dark);
+        --gray2: var(--gray2-dark);
+        --gray2-contrast: var(--gray2-contrast-dark);
+        --gray3: var(--gray3-dark);
+        --gray3-contrast: var(--gray3-contrast-dark);
+        --gray4: var(--gray4-dark);
+        --gray4-contrast: var(--gray4-contrast-dark);
+        --gray5: var(--gray5-dark);
+        --gray5-contrast: var(--gray5-contrast-dark);
+        --gray6: var(--gray6-dark);
+        --gray6-contrast: var(--gray6-contrast-dark);
 
-    --secondary: var(--yellow-dark);
-    --secondary-contrast: var(--yellow-contrast-dark);
+        --color: #fff;
+        --color-invert: #000;
 
-    --gray: var(--gray6-dark);
-    --gray-contrast: var(--gray6-contrast-dark);
-
-    --color: #fff;
-    --color-invert: #000;
-
-    --background-color: #000;
-}
+        --background-color: #000;
+    }
 }
 
 body {
@@ -187,7 +251,7 @@ sub {
 } */
 
 /* details summary {
-    margin: 0 var(--padding-surface) 0 var(--spacing-indent);
+    margin: 0 var(--surface-padding) 0 var(--spacing-indent);
     list-style-position: outside;
     color: var(--color-dark);
     cursor: pointer;
@@ -196,7 +260,7 @@ sub {
 /* details .details-content {
     overflow: hidden;
     border-radius: 0 0 var(--border-radius) var(--border-radius);
-    padding: 0 var(--padding-surface) var(--spacing-y) var(--spacing-indent);
+    padding: 0 var(--surface-padding) var(--spacing-y) var(--spacing-indent);
     background-color: var(--background-color);
 } */
 
@@ -231,20 +295,20 @@ li li {
 
 input {
     border: 0;
-    border-radius: var(--border-radius-form);
+    border-radius: var(--form-border-radius);
     box-sizing: border-box;
-    padding: 0 var(--padding-surface);
-    line-height: var(--line-height-form);
+    padding: 0 var(--surface-padding);
+    line-height: var(--form-line-height);
     height: calc(var(--font-size) * 2);
     font-size: var(--font-size);
     color: var(--color);
-    background-color: var(--gray);
+    background-color: var(--input-background-color);
     transition: background-color var(--transition-duration);
 }
 
 input:hover,
 input:focus {
-    background-color: var(--gray-contrast);
+    background-color: var(--input-background-color-contrast);
 }
 
 input.input-flex,
@@ -255,9 +319,9 @@ input.input-flex,
 
 button {
     border: 0;
-    border-radius: var(--border-radius-form);
-    padding: 0 var(--padding-surface);
-    line-height: var(--line-height-form);
+    border-radius: var(--form-border-radius);
+    padding: 0 var(--surface-padding);
+    line-height: var(--form-line-height);
     font-size: var(--font-size-small);
     color: var(--color-invert);
     background-color: var(--primary);
@@ -281,17 +345,17 @@ button.button-outline {
 
 /* input.input-inline-start,
 button.button-inline-start {
-    margin: 0 0 0 var(--padding-surface);
+    margin: 0 0 0 var(--surface-padding);
 } */
 
 /* input.input-inline,
 input.input-inline-middle,
 button.button-inline,
 button.button-inline-middle {
-    margin: 0 var(--padding-surface) 0 var(--padding-surface);
+    margin: 0 var(--surface-padding) 0 var(--surface-padding);
 } */
 
 /* input.input-inline-end,
 button.button-inline-end {
-    margin: 0 var(--padding-surface) 0 0;
+    margin: 0 var(--surface-padding) 0 0;
 } */
