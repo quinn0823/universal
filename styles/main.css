@@ -11,10 +11,13 @@ Copyright (c) 2025 Jonathan Chiu */
 
     --border-size-1: .125rem;
     --border-radius: .75em;
+    --border-radius-form: 1em;
 
+    --gap: .5rem;
     --text-padding: .5em;
 
     --line-height: 1.5em;
+    --line-height-form: 2em;
     --font-size-1: 1rem;
     --font-size-2: .75rem;
 
@@ -33,6 +36,11 @@ Copyright (c) 2025 Jonathan Chiu */
     --secondary-dark: var(--yellow-dark);
     --secondary-contrast-light: var(--yellow-contrast-light);
     --secondary-contrast-dark: var(--yellow-contrast-dark);
+
+    --global-gray-light: var(--gray5-light);
+    --global-gray-dark: var(--gray5-dark);
+    --global-gray-contrast-light: var(--gray5-contrast-light);
+    --global-gray-contrast-dark: var(--gray5-contrast-dark);
 
     --transition-duration: .25s;
 }
@@ -199,3 +207,78 @@ li {
 li li {
     margin-left: var(--indent-margin);
 }
+
+/* Form */
+.form-flex {
+    margin: var(--spacing-margin-2) 0 0 0;
+    display: flex;
+    align-items: center;
+    gap: var(--gap);
+}
+
+input {
+    border: 0;
+    border-radius: var(--border-radius-form);
+    box-sizing: border-box;
+    padding: 0 var(--text-padding);
+    line-height: var(--line-height-form);
+    height: calc(var(--font-size-1) * 2);
+    font-size: var(--font-size-1);
+    background-color: var(--global-gray-light);
+    transition: background-color var(--transition-duration);
+}
+
+input:hover,
+input:focus {
+    background-color: var(--global-gray-contrast-light);
+}
+
+input.input-flex,
+.form-flex input {
+    width: 100%;
+    flex: 1;
+}
+
+button {
+    border: 0;
+    border-radius: var(--border-radius-form);
+    padding: 0 var(--text-padding);
+    line-height: var(--line-height-form);
+    font-size: var(--font-size-2);
+    color: var(--color-dark);
+    background-color: var(--primary-light);
+    cursor: pointer;
+    transition: background-color var(--transition-duration);
+}
+
+button:hover,
+button:focus {
+    background-color: var(--primary-contrast-light);
+}
+
+button:active {
+    background-color: var(--primary-light);
+    transition: 0s;
+}
+
+input.input-outline,
+button.button-outline {
+    margin-top: var(--spacing-margin-2);
+}
+
+/* input.input-inline-start,
+button.button-inline-start {
+    margin: 0 0 0 var(--text-padding);
+} */
+
+/* input.input-inline,
+input.input-inline-middle,
+button.button-inline,
+button.button-inline-middle {
+    margin: 0 var(--text-padding) 0 var(--text-padding);
+} */
+
+/* input.input-inline-end,
+button.button-inline-end {
+    margin: 0 var(--text-padding) 0 0;
+} */
