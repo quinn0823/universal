@@ -7,28 +7,22 @@ Copyright (c) 2025 Jonathan Chiu */
 :root {
     --spacing-margin-1: 1.5em;
     --spacing-margin-2: .75em;
-    --spacing-margin-3: .25em;
     --indent-margin: 2rem;
 
-    --border-size: .125rem;
-    --border-radius-1: .875em;
-    --border-radius-2: .75em;
-    --border-radius-3: .5em;
-    --border-radius-4: .375em;
-    --border-radius-5: .125em;
-    --border-radius-6: 0;
+    --border-size-1: .125rem;
+    --border-radius: .75em;
 
-    --text-padding-1: .5em;
-    --text-padding-3: .25em;
-    --text-padding-5: var(--spacing-margin-3);
+    --text-padding: .5em;
 
     --line-height: 1.5em;
-    --line-size-1: var(--border-size);
-    --line-size-2: .075rem;
-    --line-size-2: .0625rem;
-
     --font-size-1: 1rem;
     --font-size-2: .75rem;
+
+    --color-light: #000;
+    --color-dark: #fff;
+
+    --background-color-light: #fff;
+    --background-color-dark: #000;
 
     --primary-light: var(--brown-light);
     --primary-dark: var(--brown-dark);
@@ -47,9 +41,9 @@ body {
     margin: auto;
     padding: 0 20px;
     max-width: 980px;
+    font-size: var(--font-size-1);
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 1rem;
-    background-color: #fff;
+    background-color: var(--background-color-light);
 }
 
 main {
@@ -95,7 +89,6 @@ h6 {
     font-size: 0.75rem;
 }
 
-
 /* Paragraph and text */
 p {
     margin: var(--spacing-margin-2) 0 0 0;
@@ -111,7 +104,6 @@ summary {
 .secondary,
 .secondary p,
 .secondary span,
-.secondary a,
 .secondary li {
     color: var(--secondary-light);
 }
@@ -131,6 +123,12 @@ a:hover {
 a:active {
     color: var(--primary-light);
     transition: none;
+}
+
+
+a.secondary,
+.secondary a {
+    color: var(--secondary-light);
 }
 
 a.secondary:hover,
@@ -160,99 +158,26 @@ sub {
 }
 
 /* Details */
-details {
+/* details {
     margin: var(--spacing-margin-2) 0 0 0;
-    border: var(--border-size) solid var(--primary-light);
-    border-radius: var(--border-radius-1);
+    border-radius: var(--border-radius);
     background-color: var(--primary-light);
-    transition:
-        border-color var(--transition-duration),
-        background-color var(--transition-duration);
-}
+    transition: padding var(--transition-duration);
+} */
 
-details:hover,
-details[open],
-details[open]:active {
-    border-color: var(--primary-contrast-light);
-    background-color: var(--primary-contrast-light);
-}
-
-details:active {
-    border-color: var(--primary-light);
-    background-color: var(--primary-light);
-    transition: none;
-}
-
-details.secondary,
-.secondary details {
-    border-color: var(--secondary-light);
-    background-color: var(--secondary-light);
-}
-
-details.secondary:hover,
-details.secondary[open],
-details.secondary[open]:active,
-.secondary details:hover,
-.secondary details[open],
-.secondary details[open]:active {
-    border-color: var(--secondary-contrast-light);
-    background-color: var(--secondary-contrast-light);
-}
-
-details.secondary:active,
-.secondary details:active {
-    border-color: var(--secondary-light);
-    background-color: var(--secondary-light);
-    transition: none;
-}
-
-details summary {
-    position: relative;
-    margin: 0 0 0 calc(var(--indent-margin) - var(--border-size));
-    border-radius: var(--border-radius-2);
-    padding: 0 var(--spacing-margin-3) 0 0;
-    /* list-style: none; */
+/* details summary {
+    margin: 0 var(--text-padding) 0 var(--indent-margin);
     list-style-position: outside;
+    color: var(--color-dark);
     cursor: pointer;
-    color: #fff;
-    transition: color var(--transition-duration);
-}
-
-/* details summary:hover {
-    color: var(--primary-contrast-light);
 } */
 
-/* details summary:active {
-    color: var(--primary-contrast-light);
-    transition: none;
-} */
-
-details .details-content {
-    margin: var(--border-size) 0 0 0;
-    border-radius: var(--border-radius-2);
-    padding: 0 var(--spacing-margin-3) var(--spacing-margin-3) var(--indent-margin);
+/* details .details-content {
     overflow: hidden;
-    background-color: #fff;
-}
-
-details details {
-    border-radius: var(--border-radius-3);
-}
-
-details details summary,
-details details .details-content {
-    border-radius: var(--border-radius-4);
-}
-
-details details details {
-    border-radius: var(--border-radius-5);
-}
-
-details details details summary,
-details details details .details-content,
-details details details details {
-    border-radius: var(--border-radius-6);
-}
+    border-radius: 0 0 var(--border-radius) var(--border-radius);
+    padding: 0 var(--text-padding) var(--spacing-margin-2) var(--indent-margin);
+    background-color: var(--background-color-light);
+} */
 
 /* List */
 ul,
@@ -267,87 +192,10 @@ li>* {
     margin-top: 0;
 }
 
-li,
-li>ul,
-li>ol,
-li>details,
-li>p {
+li {
+    margin-left: 1em;
+}
+
+li li {
     margin-left: var(--indent-margin);
-}
-
-/* Form */
-.form {
-    margin: var(--spacing-margin-2) 0 0 0;
-}
-.form-flex {
-    margin: var(--spacing-margin-2) 0 0 0;
-    display: flex;
-    align-items: center;
-    gap: var(--text-padding-1);
-}
-
-input,
-button {
-    padding: 0 var(--text-padding-1);
-    line-height: var(--line-height);
-    border: var(--border-size) solid var(--primary-light);
-    /* display: block; */
-}
-
-input {
-    border-radius: var(--border-radius-1);
-    font-size: var(--font-size-1);
-    transition: border var(--transition-duration);
-}
-
-input.input-flex {
-    width: 100%;
-    flex: 1;
-}
-
-input:hover {
-    border-color: var(--primary-contrast-light);
-}
-
-button {
-    border-radius: calc((var(--line-height) + var(--border-size) * 2) / 2);
-    padding: 0 calc(var(--line-height) / 2 * .75);
-    font-size: var(--font-size-2);
-    color: #fff;
-    background-color: var(--primary-light);
-    transition:
-        border-color var(--transition-duration),
-        background-color var(--transition-duration);
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: var(--primary-contrast-light);
-    border-color: var(--primary-contrast-light);
-}
-
-button:active {
-    background-color: var(--primary-light);
-    transition: none;
-}
-
-input.input-outline,
-button.button-outline {
-    margin-top: var(--spacing-margin-2);
-}
-
-input.input-inline-start,
-button.button-inline-start {
-    margin: 0 0 0 var(--text-padding-1);
-}
-input.input-inline,
-input.input-inline-middle,
-button.button-inline,
-button.button-inline-middle {
-    margin: 0 var(--text-padding-1) 0 var(--text-padding-1);
-}
-
-input.input-inline-end,
-button.button-inline-end {
-    margin: 0 var(--text-padding-1) 0 0;
 }
