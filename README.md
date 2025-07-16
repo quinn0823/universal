@@ -28,6 +28,8 @@ universal
 <head>
     <title>Template</title>
 
+    <link rel="stylesheet" href="https://quinn0823.github.io/universal/styles/layout.css" type="text/css" />
+
     <meta name="author" content="Jonathan Chiu" />
     <meta name="license" content="MIT" />
     <meta name="copyright-year" content="2025" />
@@ -41,8 +43,7 @@ universal
 
     <footer id="universal-footer"></footer>
 
-    <script src="https://quinn0823.github.io/universal/scripts/header.js" type="text/javascript"></script>
-    <script src="https://quinn0823.github.io/universal/scripts/footer.js" type="text/javascript"></script>
+    <script src="https://quinn0823.github.io/universal/scripts/layout.js" type="text/javascript"></script>
 </body>
 ```
 
@@ -108,8 +109,8 @@ universal
 
 ## Template
 
-- en-US: [source](./template/en-us/index.html), [preview](https://quinn0823.github.io/universal/template/en-us/)
-- zh-CN: [source](./template/zh-cn/index.html), [preview](https://quinn0823.github.io/universal/template/zh-cn/)
+- en-US: [preview](https://quinn0823.github.io/universal/template/en-us/), [source](./template/en-us/index.html)
+- zh-CN: [preview](https://quinn0823.github.io/universal/template/zh-cn/), [source](./template/zh-cn/index.html)
 
 ## Projects Powered by Universal
 
@@ -121,7 +122,7 @@ universal
 
 ---
 
-Updated Date: June 20, 2025
+Updated Date: July 16, 2025
 
 The MIT License (MIT)
 
