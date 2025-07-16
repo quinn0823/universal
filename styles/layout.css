@@ -41,8 +41,7 @@ footer#universal-footer a {
     transition: var(--transition-duration);
 }
 
-footer#universal-footer a:hover,
-footer#universal-footer a:focus {
+footer#universal-footer a:hover {
     color: var(--secondary-contrast-light);
 }
 

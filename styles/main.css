@@ -251,8 +251,7 @@ button {
     transition: background-color var(--transition-duration);
 }
 
-button:hover,
-button:focus {
+button:hover {
     background-color: var(--primary-contrast-light);
 }
 
