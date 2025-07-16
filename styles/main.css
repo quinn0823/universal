@@ -343,19 +343,19 @@ button.button-outline {
     margin-top: var(--spacing-y);
 }
 
-/* input.input-inline-start,
+input.input-inline-start,
 button.button-inline-start {
-    margin: 0 0 0 var(--surface-padding);
-} */
+    margin: 0 var(--spacing-x) 0 0;
+}
 
-/* input.input-inline,
+input.input-inline,
 input.input-inline-middle,
 button.button-inline,
 button.button-inline-middle {
-    margin: 0 var(--surface-padding) 0 var(--surface-padding);
-} */
+    margin: 0 var(--spacing-x) 0 var(--spacing-x);
+}
 
-/* input.input-inline-end,
+input.input-inline-end,
 button.button-inline-end {
-    margin: 0 var(--surface-padding) 0 0;
-} */
+    margin: 0 0 0 var(--spacing-x);
+}
